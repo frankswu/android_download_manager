@@ -23,11 +23,14 @@ public class Utils {
 	public static String[] title = {"应用汇","supercsman","simcitydeluxe_na"};  
 	public static String[] url = {
 ////	    "http://www.appchina.com/market/e/9999/download.pc/0/07AF54501F81A96C637B09726A6AEFD6/com.yingyonghui.market.1320044233371.apk?refererPage=www.download",
-	    "http://118.145.8.36/1.apk",
+//	    "http://118.145.8.36/1.apk",
 ////	    "http://www.appchina.com/market/e/15239/download.pc/0/07AF54501F81A96C637B09726A6AEFD6/com.supercsman.1320750838380.apk?refererPage=www.download",
 //	    "http://118.145.8.36/2.apk",
-	    "http://118.145.8.36/5.apk",
-	    "http://118.145.8.36/3.apk",
+//	    "http://118.145.8.36/5.apk",
+//	    "http://118.145.8.36/3.apk",
+		"http://padvod-cnc.wasu.cn/201507041533/070fc4b1e392de91afc707bcc0b5a0bc/pcsan09/mams/vod/201504/30/08/201504300848228039ce4fc57_18ab2167.mp4",
+		"http://115.231.134.20/padvod-cnc.wasu.cn/201507041533/070fc4b1e392de91afc707bcc0b5a0bc/pcsan09/mams/vod/201504/30/08/201504300848228039ce4fc57_18ab2167.mp4",
+		"http://115.231.134.20/padvod-cnc.wasu.cn/201507041533/070fc4b1e392de91afc707bcc0b5a0bc/pcsan09/mams/vod/201504/30/08/201504300848228039ce4fc57_18ab2167.mp4",
 	    };
 //	    "http://www.appchina.com/market/e/15250/download.pc/0/07AF54501F81A96C637B09726A6AEFD6/com.ea.simcitydeluxe_na.1320834962154.apk?refererPage=www.download"};
 	
@@ -69,13 +72,6 @@ public class Utils {
 		context.startActivity(intent);
 	}
 	
-	//SDcard 操作  
-	public static boolean isSdCardWrittenable() {
-	    if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED)) {
-		return true;
-	    }
-	    return false;
-	}
 
 	public static long getAvailableStorage() {		
 
@@ -107,6 +103,13 @@ public class Utils {
 	
 	public static boolean isSDCardPresent(){
 		return Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED);
+	}
+	//SDcard 操作  
+	public static boolean isSdCardWrittenable() {
+	    if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED)) {
+		return true;
+	    }
+	    return false;
 	}
 	
 	    
